@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <section id="formulario">
+        <div id="topo">
+            <h1>Pesquisa Web</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquid, alias recusandae aut maxime.</p>
+        </div>
+        <form action="login.php" method="post" autocomplete="on">
+            <div class="campo_dadospessoais">
+                <div class="campo">
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" placeholder="ex: Andriano" required minlength="3" maxlength="10" autocomplete="name">
+                </div>
+                <div class="campo">
+                    <label for="isobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="isobrenome" required minlength="3" maxlength="10" placeholder="ex: Silva" autocomplete="name">
+                </div>
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" placeholder="Ex: exemplo@gmail.com" required autocomplete="email">
+                </div>
+                <div class="campo">
+                    <p>Sexo</p>
+                    <label for="isexo">Feminino</label>
+                    <input type="radio" name="sexo" id="isexo" value="F">
+                    <label for="isexo">Masculino</label>
+                    <input type="radio" name="sexo" id="isexo" value="M">
+                </div>
+                <div class="campo">
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" required pattern="^\(\d\d\)[0-9]{4}-[0-9]{4}$" placeholder="(xx)xxxx-xxxx">
+                </div>
+                <div class="campo">
+                    <label for="idata">Data de Nascimento</label>
+                    <input type="date" name="data" id="idata" required value="2002-08-12">
+                </div>
+                <div class="campo">
+                    <label for="icpf">CPF</label>
+                    <input type="text" name="cpf" id="icpf" placeholder="xxx.xxx.xxx-xx">
+                </div>
+            </div>
+            <div class="campo_perguntas">
+                <div class="campo">
+                    <label for="">Dentre as tecnologias qual é sua preferida</label>
+                    <input type="radio" name="tec" id="itec1">
+                    <label for="itec1">Python</label>
+                    
+                    <input type="radio" name="tec" id="itec2">
+                    <label for="itec2">C#</label>
+                    
+                    <input type="radio" name="tec" id="itec3">
+                    <label for="itec3">C++</label>
+                    
+                    <input type="radio" name="tec" id="itec4">
+                    <label for="itec4">C</label>
+                    
+                    <input type="radio" name="tec" id="itec5">
+                    <label for="itec5">JAVA</label>
+                    
+                    <input type="radio" name="tec" id="itec6">
+                    <label for="itec6">JavaScript</label>
+
+                    <input type="radio" name="tec" id="itec7">
+                    <label for="itec7">PHP</label>
+                </div>
+                <div class="campo">
+                    <label for="inivel">Seu nível na tecnologia escolhida anteriormente</label>
+                    <select name="nivel" id="inivel">
+                        <optgroup>
+                            <option selected disabled value="">-- Selecione --</option>
+                            <option>Iniciante</option>
+                            <option>intermediario</option>
+                            <option>Profissional</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="">Seu Hobbies</label>
+
+                    <input type="checkbox" name="ler" id="iler" value="ler"></input>
+                    <label for="iler">Ler</label>
+
+                    <input type="checkbox" name="escrever" id="iescrever" value="escrever"></input>
+                    <label for="iescrever">Escrever</label>
+
+                    <input type="checkbox" name="youtube" id="iyoutube" value="youtube">
+                    <label for="iyoutube">Produzir conteúdo para o Youtube</label>
+
+                    <input type="checkbox" name="redessociais" id="iredessociais" value="redessociais">
+                    <label for="iredessociais">Uso de redes sociais</label>
+
+                    <input type="checkbox" name="cozinha" id="icozinha" value="cozinha">
+                    <label for="icozinhar">Cozinhar</label>
+
+                    <input type="checkbox" name="voluntariado" id="ivoluntariado" value="voluntariado">
+                    <label for="ivoluntariado">Voluntariado</label>
+
+                    <input type="checkbox" name="esporte" id="iesporte" value="esporte">
+                    <label for="iesporte">Esportes</label> 
+
+                    <input type="checkbox" name="instrumentos" id="iinstrumentos" value="instrumento">
+                    <label for="iinstrumentos">Tocar instrumentos musicais</label>
+
+                    <input type="checkbox" name="teatro" id="iteatro" value="teatro">
+                    <label for="iteatro">Teatro</label> 
+
+                    <input type="checkbox" name="danca" id="idanca" value="danca">
+                    <label for="idanca">Dança</label> 
+
+                    <input type="checkbox" name="viagem" id="iviagem" value="viagem">
+                    <label for="iviagens">Viagens</label>
+
+                    <input type="checkbox" name="outros" id="outros" value="outros">    
+                    <label for="ioutros">Outros</label>
+
+                </div>
+
+                <div class="campo">
+                    <label for="icurso">Curso</label>
+                    <input type="text" name="curso" id="icurso" list="listcurso">
+                    <datalist id="listcurso">
+                        <option value="IB">Informatica Básica</option>
+                        <option value="CP">Ciência da computarção</option>
+                        <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="SI">Sistemas de Informação</option>
+                    </datalist>
+                </div>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+</body>
+</html>
